@@ -18,15 +18,15 @@
     <!--start coding here-->
     <!-- dev1 (header, nav)-->
     <header
-      class="w-full min-h-screen flex flex-col bg-white relative z-[-1] lg:h-[956px]"
+      class="w-full min-h-screen flex flex-col bg-white relative z-[0] lg:h-[956px]"
     >
       <!-- background polygon -->
       <div
-        class="bg-[#F4F7FC] absolute z-[0] top-[0px] left-[0] w-full h-[737px] [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_85%)] lg:h-[911px]"
+        class="bg-[#F4F7FC] absolute z-[1] top-[0px] left-[0] w-full h-[737px] [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_85%)] lg:h-[911px]"
       ></div>
       <!-- nav -->
       <nav
-        class="w-full h-[59px] flex justify-between items-center px-[20px] py-[13px] z-[1] lg:h-[69px] lg:px-0 lg:py-[60px] lg:max-w-[1122px] lg:mx-auto"
+        class="w-full h-[59px] flex justify-between items-center px-[20px] py-[13px] z-[2] lg:h-[69px] lg:px-0 lg:py-[60px] lg:max-w-[1122px] lg:mx-auto"
       >
         <!-- agencio logo -->
         <img
@@ -47,41 +47,41 @@
           <!-- home link -->
           <a
             href="#"
-            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal"
+            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-200"
           >
             Home
           </a>
           <!-- category link -->
           <a
             href="#"
-            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal"
+            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-200"
           >
             Category
           </a>
           <!-- service link -->
           <a
             href="#"
-            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal"
+            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-200"
           >
             Service
           </a>
           <!-- blog link -->
           <a
             href="#"
-            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal"
+            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-200"
           >
             Blog
           </a>
           <!-- contact link -->
           <a
             href="#"
-            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal"
+            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-200"
           >
             Contact
           </a>
           <!-- create account button -->
           <button
-            class="w-[160px] h-[60px] rounded-[5px] bg-[#FDD76E] text-[16px] leading-[100%] text-center text-[#0B0757] font-normal"
+            class="w-[160px] h-[60px] rounded-[5px] bg-[#FDD76E] text-[16px] leading-[100%] text-center text-[#0B0757] font-normal hover:bg-[#FBC84A] hover:scale-105 hover:shadow-lg transition-all duration-200"
           >
             Create Account
           </button>
@@ -93,7 +93,7 @@
       >
         <!-- hero section -->
         <div
-          class="hero-container w-full flex flex-col px-[20px] pt-[47px] pb-[60px] gap-[20px] z-[1] lg:w-[565px] lg:px-0 lg:pt-0 lg:pb-0 lg:mb-[120px]"
+          class="hero-container w-full flex flex-col px-[20px] pt-[47px] pb-[60px] gap-[20px] z-[2] lg:w-[565px] lg:px-0 lg:pt-0 lg:pb-0 lg:mb-[120px]"
         >
           <!-- tagline hero section-->
           <div class="flex">
@@ -119,21 +119,23 @@
           <div class="flex items-center gap-[7px] lg:gap-[12px]">
             <!-- get started button -->
             <button
-              class="w-[160px] h-[60px] rounded-[5px] bg-[#1374F6] font-medium text-[16px] leading-[100%] text-center text-white"
+              class="w-[160px] h-[60px] rounded-[5px] bg-[#1374F6] font-medium text-[16px] leading-[100%] text-center text-white hover:bg-[#0E5FD4] hover:scale-105 hover:shadow-lg transition-all duration-200"
             >
               Get Started
             </button>
             <!-- watch video button -->
-            <button class="flex items-center gap-[8px] h-[60px] px-[16px]">
+            <button
+              class="flex items-center gap-[8px] h-[60px] px-[16px] hover:gap-[10px] transition-all duration-200 group"
+            >
               <!-- play button -->
               <img
                 src="/images/dev1/play-button.svg"
                 alt="Play Button"
-                class="w-[24px] h-[24px]"
+                class="w-[24px] h-[24px] group-hover:scale-110 transition-transform duration-200"
               />
               <!-- watch video text -->
               <span
-                class="text-[#0B0757] font-normal text-[16px] leading-[100%]"
+                class="text-[#0B0757] font-normal text-[16px] leading-[100%] group-hover:text-[#1374F6] group-hover:underline group-hover:decoration-2 group-hover:underline-offset-4 transition-all duration-200"
               >
                 Watch Video
               </span>
@@ -148,25 +150,25 @@
           <img
             src="/images/dev1/hero-portrait.png"
             alt="Hero Portrait"
-            class="absolute z-[1] top-[0px] left-[60px] w-auto h-full object-contain lg:w-[445px] lg:h-[614px] lg:top-[13px] lg:left-[90px]"
+            class="absolute z-[2] top-[0px] left-[60px] w-auto h-full object-contain lg:w-[445px] lg:h-[614px] lg:top-[13px] lg:left-[90px]"
           />
           <!-- real time user -->
           <img
             src="/images/dev1/real-time-user.png"
             alt="Real Time User"
-            class="z-[2] object-cover rounded-[10px] absolute top-[5px] right-[1px] w-auto h-auto max-w-[180px] lg:max-w-[149px] lg:h-[204.18px] lg:top-[40px] lg:right-[-40px]"
+            class="z-[3] object-cover rounded-[10px] absolute top-[5px] right-[1px] w-auto h-auto max-w-[180px] lg:max-w-[149px] lg:h-[204.18px] lg:top-[40px] lg:right-[-40px]"
           />
           <!-- user sample -->
           <img
             src="/images/dev1/user-sample.png"
             alt="User Sample"
-            class="z-[2] object-cover rounded-[10px] absolute bottom-[0] left-[0] w-auto h-auto max-w-[160px] lg:max-w-[180px] lg:h-[280px] lg:bottom-[20px] lg:left-[20px]"
+            class="z-[3] object-cover rounded-[10px] absolute bottom-[0] left-[0] w-auto h-auto max-w-[160px] lg:max-w-[180px] lg:h-[280px] lg:bottom-[20px] lg:left-[20px]"
           />
           <!-- message logo -->
           <img
             src="/images/dev1/message-logo.svg"
             alt="Message Logo"
-            class="z-[3] object-cover absolute bottom-[135px] left-[90px] w-auto h-auto lg:w-[79.95px] lg:h-[79.95px] lg:bottom-[220px] lg:left-[125px]"
+            class="z-[4] object-cover absolute bottom-[135px] left-[90px] w-auto h-auto lg:w-[79.95px] lg:h-[79.95px] lg:bottom-[220px] lg:left-[125px]"
           />
         </div>
       </section>

@@ -243,15 +243,15 @@
     <!-- dev3 (pricing plan, testimonial)-->
     <!-- Pricing Plan Section -->
     <section
-      class="w-[379px] min-h-[700px] py-[3216px] px-[-2px] flex flex-col items-center ml-[15px]"
+      class="w-[379px] min-h-[700px] pt-[3216px] px-[-2px] flex flex-col"
     >
-      <div class="w-[432px] min-h-[554px] my-[50px] mx-[15px] ml-[18px]">
+      <div class="w-[432px] min-h-[554px] my-[50px]">
         <!-- Section Title -->
-        <div class="text-center mb-8 mx-[15px]">
-          <p class="text-[#8480AE] text-xl/[100%] font-normal mb-4">
+        <div class="text-center">
+          <p class="w-[93px] h-[24px] text-[#8480AE] text-xl/[100%] font-normal whitespace-nowrap mx-[142px]">
             Price Plan
           </p>
-          <h2 class="text-[#0B0757] text-4xl/[100%] font-medium tracking-[0]">
+          <h2 class="w-[348px] h-[129px] text-[#0B0757] text-4xl/[100%] font-medium tracking-[0] ml-[15px] pt-[15px]">
             No Extra<br />
             Charges! Choose<br />
             <span>Your Plan.</span>
@@ -259,7 +259,9 @@
         </div>
 
         <!-- Pricing Table -->
-        <div class="w-[432px] h-[px] ml-[18px] mt-16 border-t border-b border-l border-r border-[#0B075714]">
+        <div
+          class="w-[432px] h-[px] ml-[18px] mt-15 border-t border-b border-l border-r border-[#0B075714]"
+        >
           <div
             class="grid gap-0 border-b border-[#0B075714] [grid-template-columns:121px_103px_103px_103px]"
           >
@@ -466,7 +468,7 @@
           >
             <div></div>
             <div
-              class="text-center h-full flex flex-col items-center justify-center"
+              class="text-center h-full flex flex-col items-center pt-[15px]"
             >
               <button
                 class="w-[85px] h-[40px] bg-[#FDC46E] text-white px-8 py-3 rounded text-xs font-medium leading-[100%] tracking-[0] flex items-center justify-center whitespace-nowrap"
@@ -476,7 +478,7 @@
               <p class="hidden">Get your 30 days free trial</p>
             </div>
             <div
-              class="text-center h-full flex flex-col items-center justify-center"
+              class="text-center h-full flex flex-col items-center pt-[15px]"
             >
               <button
                 class="w-[85px] h-[40px] bg-[#00B894] text-white px-8 py-3 rounded text-xs font-medium leading-[100%] tracking-[0] flex items-center justify-center whitespace-nowrap"
@@ -486,7 +488,7 @@
               <p class="hidden">Get your 30 days free trial</p>
             </div>
             <div
-              class="text-center h-full flex flex-col items-center justify-center"
+              class="text-center h-full flex flex-col items-center pt-[15px]"
             >
               <button
                 class="w-[85px] h-[40px] bg-blue-500 text-white px-8 py-3 rounded text-xs font-medium leading-[100%] tracking-[0] flex items-center justify-center whitespace-nowrap"
@@ -501,63 +503,52 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="bg-white py-16 px-4">
-      <div class="max-w-4xl mx-auto">
-        <div class="flex flex-col md:flex-row items-center gap-8">
-          <!-- Customer Image -->
-          <div class="relative">
+    <section class="w-[375px] h-[847px]">
+      <div class="flex flex-col gap-[20px]">
+        <!-- Customer Image -->
+        <div class="pt-[74px] pl-[25px] relative">
+          <div
+            class="w-[308px] h-[424px] rounded-lg bg-[#ffffff] relative overflow-hidden"
+          >
+            <img
+              src="./images/testimonial/women.png"
+              alt="Customer testimonial - Jack Smith"
+              class="z-0"
+            />
+            </div>
+
+            <!-- Thumbs Up Icon -->
             <div
-              class="w-48 h-48 rounded-lg bg-pink-200 relative overflow-hidden"
+              class="absolute top-[308px] left-[3px] bg-[#64D5FD] w-[76px] h-[76px] rounded-[10px] flex items-center justify-center z-[1000]"
             >
               <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
-                alt="Customer testimonial - Jack Smith"
-                class="w-full h-full object-cover"
+                src="./images/testimonial/thumbLike.svg"
+                alt="thumbUp"
+                class="w-[40px] h-[40px]"
               />
-              <!-- Thumbs Up Icon -->
-              <div
-                class="absolute bottom-2 left-2 bg-blue-400 w-10 h-10 rounded flex items-center justify-center"
-              >
-                <svg
-                  class="w-6 h-6 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.834a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"
-                  />
-                </svg>
-              </div>
-            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Content -->
+        <div class="w-[343px] h-[244px] flex flex-col justify-center pl-[16px]">
+          <!-- Quote Icon -->
+          <div class="mb-4">
+            <img src="./images/testimonial/quote.svg" alt="quote" class="w-[44px] h-[44px]" />
           </div>
 
-          <!-- Testimonial Content -->
-          <div class="flex-1">
-            <!-- Quote Icon -->
-            <div class="mb-4">
-              <svg
-                class="w-16 h-16 text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
-                />
-              </svg>
-            </div>
+          <!-- Testimonial Text -->
+           <div class="w-[343px] h-[244px] flex flex-col justify-between items-center">
+          <p class="text-[#8480AE] text-base font-normal leading-[24px] italic">
+            It's awesome service. Land from day very fill that midst stars one
+            dominion. Itself was let that divided itself god don't subdue
+            wherein let behold over he whose of sea moved called.
+          </p>
 
-            <!-- Testimonial Text -->
-            <p class="text-gray-600 text-lg leading-relaxed mb-6">
-              It's awesome service. Land from day very fill that midst stars one
-              dominion. Itself was let that divided itself god don't subdue
-              wherein let behold over he whose of sea moved called.
-            </p>
-
-            <!-- Author Info -->
-            <div>
-              <p class="text-orange-500 font-semibold text-lg">Jack Smith</p>
-              <p class="text-gray-400 text-sm">CEO of DIAND</p>
-            </div>
+          <!-- Author Info -->
+          <div>
+            <p class="w-[120px] h-[36px] text-[#FDC46E] font-bold text-xl leading-[40px] tracking-[0]">Jack Smith</p>
+            <p class="text-[#8480AE] text-sm font-normal leading-[28px] tracking-[0]">CEO of DIAND</p>
+          </div>
           </div>
         </div>
       </div>

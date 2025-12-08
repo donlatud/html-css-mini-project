@@ -4,11 +4,173 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Agencio</title>
   </head>
-  <body>
+  <body class="font-[rubik] flex flex-col items-center justify-center">
     <!--start coding here-->
     <!-- dev1 (header, nav)-->
-    <header></header>
+    <header
+      class="w-full min-h-screen flex flex-col bg-white relative z-[-1] lg:h-[956px]"
+    >
+      <!-- background polygon -->
+      <div
+        class="bg-[#F4F7FC] absolute z-[0] top-[0px] left-[0] w-full h-[737px] [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_85%)] lg:h-[911px]"
+      ></div>
+      <!-- nav -->
+      <nav
+        class="w-full h-[59px] flex justify-between items-center px-[20px] py-[13px] z-[1] lg:h-[69px] lg:px-0 lg:py-[60px] lg:max-w-[1122px] lg:mx-auto"
+      >
+        <!-- agencio logo -->
+        <img
+          src="/images/dev1/agencio-logo.svg"
+          alt="Agencio Logo"
+          class="w-[125px] h-[33px] lg:w-[150px] lg:h-[40px]"
+        />
+        <!-- hamberger logo -->
+        <img
+          src="/images/dev1/hamberger-logo.svg"
+          alt="Hamberger Logo"
+          class="w-[18px] h-[16px] lg:hidden"
+        />
+        <!-- links container -->
+        <div
+          class="hidden lg:flex lg:justify-between lg:items-center lg:gap-[40px]"
+        >
+          <!-- home link -->
+          <a
+            href="#"
+            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:text-[#1374F6] transition-colors"
+          >
+            Home
+          </a>
+          <!-- category link -->
+          <a
+            href="#"
+            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:text-[#1374F6] transition-colors"
+          >
+            Category
+          </a>
+          <!-- service link -->
+          <a
+            href="#"
+            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:text-[#1374F6] transition-colors"
+          >
+            Service
+          </a>
+          <!-- blog link -->
+          <a
+            href="#"
+            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:text-[#1374F6] transition-colors"
+          >
+            Blog
+          </a>
+          <!-- contact link -->
+          <a
+            href="#"
+            class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:text-[#1374F6] transition-colors"
+          >
+            Contact
+          </a>
+          <!-- create account button -->
+          <button
+            class="w-[160px] h-[60px] rounded-[5px] bg-[#FDD76E] text-[16px] leading-[100%] text-center text-[#0B0757] font-normal hover:bg-[#F5C85A] transition-colors"
+          >
+            Create Account
+          </button>
+        </div>
+      </nav>
+      <!-- section hero -->
+      <section
+        class="flex flex-col lg:flex-row lg:justify-between lg:items-center lg:max-w-[1200px] lg:mx-auto lg:w-full lg:px-[40px] lg:pt-[60px]"
+      >
+        <!-- hero section -->
+        <div
+          class="hero-container w-full flex flex-col px-[20px] pt-[47px] pb-[60px] gap-[20px] z-[1] lg:w-[565px] lg:px-0 lg:pt-0 lg:pb-0"
+        >
+          <!-- tagline hero section-->
+          <div class="flex">
+            <div
+              class="text-[#1374F6] font-normal text-[16px] leading-[100%] uppercase tracking-wide inline-flex items-center gap-[8px] lg:text-[17px]"
+            >
+              CREATIVE AGENCY _
+            </div>
+          </div>
+          <!-- title hero section-->
+          <div
+            class="font-medium text-[36px] leading-[120%] text-[#0B0757] lg:text-[48px] lg:leading-[120%]"
+          >
+            We are here to give the best service
+          </div>
+          <!-- description hero section-->
+          <div
+            class="font-normal text-[14px] leading-[24px] text-[#8480AE] lg:text-[18px] lg:leading-[30px] lg:max-w-[500px]"
+          >
+            It's crafted with the latest trend of design & coded with all modern
+            approaches. It's a robust & multi-dimensional usable template.
+          </div>
+          <div class="flex items-center gap-[7px] lg:gap-[12px]">
+            <!-- get started button -->
+            <button
+              class="w-[160px] h-[60px] rounded-[5px] bg-[#1374F6] font-medium text-[16px] leading-[100%] text-center text-white hover:bg-[#0f63d6] transition-colors"
+            >
+              Get Started
+            </button>
+            <!-- watch video button -->
+            <button
+              class="flex items-center gap-[8px] h-[60px] px-[16px]"
+            >
+              <!-- play button -->
+              <img
+                src="/images/dev1/play-button.svg"
+                alt="Play Button"
+                class="w-[24px] h-[24px]"
+              />
+              <!-- watch video text -->
+              <span
+                class="text-[#0B0757] font-normal text-[16px] leading-[100%]"
+              >
+                Watch Video
+              </span>
+            </button>
+          </div>
+        </div>
+        <!-- immage section -->
+        <div
+          class="image-container w-full h-[372.56px] flex relative lg:w-[609px] lg:h-[632px] lg:ml-[100px]"
+        >
+          <!-- hero portrait -->
+          <img
+            src="/images/dev1/hero-portrait.png"
+            alt="Hero Portrait"
+            class="absolute z-[1] top-[0px] left-[60px] w-auto h-full object-contain lg:w-[445px] lg:h-[614px] lg:top-[13px] lg:left-[90px]"
+          />
+          <!-- real time user -->
+          <img
+            src="/images/dev1/real-time-user.png"
+            alt="Real Time User"
+            class="z-[2] object-cover rounded-[10px] absolute top-[5px] right-[1px] w-auto h-auto max-w-[180px] lg:max-w-[149px] lg:h-[204.18px] lg:top-[40px] lg:right-[-40px]"
+          />
+          <!-- user sample -->
+          <img
+            src="/images/dev1/user-sample.png"
+            alt="User Sample"
+            class="z-[2] object-cover rounded-[10px] absolute bottom-[0] left-[0] w-auto h-auto max-w-[160px] lg:max-w-[180px] lg:h-[280px] lg:bottom-[20px] lg:left-[20px]"
+          />
+          <!-- message logo -->
+          <img
+            src="/images/dev1/message-logo.svg"
+            alt="Message Logo"
+            class="z-[3] object-cover absolute bottom-[135px] left-[90px] w-auto h-auto lg:w-[79.95px] lg:h-[79.95px] lg:bottom-[220px] lg:left-[125px]"
+          />
+        </div>
+      </section>
+    </header>
 
     <!-- dev2 (services, take your hand)-->
     <section></section>

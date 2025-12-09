@@ -15,7 +15,7 @@
 <body class="font-[rubik] flex flex-col items-center justify-center p-[0] m-[0]">
   <!--start coding here-->
   <!-- dev1 (header, nav)-->
-  <header class="w-full min-h-screen flex flex-col bg-white relative z-[0] lg:h-[956px]">
+  <header class="w-full flex flex-col bg-white relative z-[0] lg:h-[956px]">
     <!-- background polygon -->
     <div
       class="bg-[#F4F7FC] absolute z-[1] top-[0px] left-[0] w-full h-[737px] [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_85%)] lg:h-[911px]">
@@ -124,7 +124,7 @@
 
   <!-- dev2 (services, take your hand)-->
   <!-- services section -->
-  <section class="flex flex-col justify-between items-start h-[1391px] w-full pl-[16px] py-[50px] lg:h-[626px] lg:max-w-[1440px] lg:mx-auto lg:flex-row lg:items-center lg:justify-start xl:relative">
+  <section class="flex flex-col justify-between items-start h-[1391px] w-full pl-[16px] py-[50px] lg:h-[626px] lg:pt-[0px] lg:max-w-[1440px] lg:mx-auto lg:flex-row lg:items-center lg:justify-start xl:relative">
     <div class="flex flex-col justify-between items-start h-full w-full max-w-[285px] lg:h-[447px] lg:max-w-[1200px] lg:mx-auto lg:px-[40px]">
       <h1 class="max-w-[264px] font-medium text-4xl text-[#0B0757] py-[29px] lg:text-5xl lg:max-w-[352px]">Lets Check Our<br>Services
         <span class="inline-block align-center w-[36px] border-b-4 border-solid rounded-xs border-[#1374F6] lg:w-[68px] lg:border-b-6 lg:rounded-sm"></span>
@@ -177,7 +177,7 @@
   </section>
 
   <!-- take your hand section -->
-  <section class="flex flex-col justify-between items-start max-h-full w-full py-[50px] lg:h-[971px] lg:max-w-[1440px] lg:flex-row lg:items-center lg:justify-start">
+  <section class="flex flex-col justify-between items-start max-h-full w-full pt-[100px] pb-[50px] lg:h-[971px] lg:max-w-[1440px] lg:flex-row lg:items-center lg:justify-start">
     <div class="relative z-[-1] w-full h-[931px] lg:h-full lg:max-w-[1200px] lg:mx-auto lg:px-[40px]">
 
       <!--title and description container-->
@@ -216,7 +216,7 @@
     <!-- dev3 (pricing plan, testimonial)-->
     <!-- Pricing Plan Section -->
     <section
-      class="w-full min-h-[700px] pt-[3216px] px-[-2px] flex flex-col lg:min-h-[1032px] lg:flex lg:flex-col lg:items-center"
+      class="w-full px-[-2px] flex flex-col lg:flex lg:flex-col lg:items-center"
     >
       <div class="w-[432px] min-h-[554px] my-[50px] lg:flex lg:flex-col lg:items-center">
         <!-- Section Title -->
@@ -233,7 +233,7 @@
 
         <!-- Pricing Table -->
         <div
-          class="w-[432px] h-[px] ml-[18px] mt-15 border-t border-b border-r border-[#0B075714] lg:w-[1110px] lg:h-[584px] lg:ml-[0] lg:mt-[50px] lg:border-b-0 "
+          class="w-[432px] ml-[18px] mt-[15px] border-t border-b border-r border-[#0B075714] lg:w-[1110px] lg:h-[584px] lg:ml-[0] lg:mt-[50px] lg:border-b-0 "
         >
           <div
             class="grid gap-0 border-b border-[#0B075714] [grid-template-columns:121px_103px_103px_103px] lg:[grid-template-columns:277px_277px_277px_277px]"
@@ -571,45 +571,45 @@
     </div>
   </section>
 
-  <!-- dev4 newsletter-->
-  <section>
-    <div class="flex flex-col items-center bg-[#F4F7FC] p-8 gap-5
-                lg:bg-[#F4F7FC] lg:w-[1110px] lg:rounded-lg lg:mx-auto lg:px-18 lg:py-0 lg:gap-6">
-      <!--BOX lg:justify-center  items-stretch -->
-      <div class="text-center text-wrap 
+    <!-- dev4 newsletter-->
+    <section>
+      <div class="flex flex-col justify-center items-center bg-[#F4F7FC] p-8 gap-5 leading-tight
+      lg:bg-[#F4F7FC] lg:w-[1110px] lg:rounded-lg lg:mx-auto lg:px-18 lg:py-0 lg:gap-6"> <!--BOX lg:justify-center  items-stretch -->
+        <div class="text-center text-wrap 
                     lg:mt-10">
-        <h1 class="text-4xl font-bold text-[#0B0757] leading-tight">Sign up to our newsletter</h1>
-      </div>
-      <div class="text-center text-wrap">
-        <p class="text-lg text-[#8480AE]">Recive latest news, updates and many <br> other news every week.</p>
-      </div>
-      <div class="flex flex-row justify-center items-center rounded-full bg-white w-[319px] h-[67px] gap-15
+          <h1 class="text-4xl font-bold text-[#0B0757] leading-tight">Sign up to our newsletter</h1>
+        </div>
+        <div class="text-center text-wrap"> 
+          <p class="text-lg text-[#8480AE]">Recive latest news, updates and many <br class="hidden lg:flex"> other news every week.</p>
+        </div>
+        <div class="flex flex-row justify-center items-center rounded-full bg-white w-[319px] h-[67px] gap-[15px]
                     lg:w-[480px] lg:justify-between lg:px-3 lg:mb-10">
-        <input placeholder="Enter your email address" class="text-[#0B075733]">
-        </input> <!--Enter your email address-->
+        <input placeholder="Enter your email address" class="text-[#0B075733]" />
+        <!--Enter your email address-->
         <button class=""><img src="images/img.Div.Q/Div.Q.BT.svg" alt="Button icon newsletter"></button>
         <!--img Div.Q.BT-->
       </div>
     </div>
   </section>
 
-  <!--dev4 footer-->
-  <footer>
-    <div> <!--box for หัวข้อใหญ่ เพื่อจัดให้เป็นแนวนอนแบบใหญ่ -->
-
-      <div> <!--ตั้งแต่ Agencio ถึง logo เพื่อตั้งเป้นคอรัม-->
-
-        <div class="relative inline-block"> <!--สำหรับร่วม logo เพื่อไม่โดดไปจุดอื่น-->
-          <img src="images/img.Div.Q/Div.Q.logo.Agencio.blue.svg" alt="logo-main-blue" class="relative z-10" />
-          <img src="images/img.Div.Q/Div.Q.logo.Agencio.svg" alt="logo-main-white"
-            class="absolute top-0 left-0 z-20 ml-2" />
-        </div>
-        <h1>Agencio</h1>
-        <p>
-          Winged moving moveth created for shall and a divide the their days male
-          midst shall hath doesn't won't for.
-          Midst life.Over a great night.
-        </p>
+    <!--dev4 footer-->
+    <footer> 
+      <div class="min-[551px]:flex min-[551px]:flex-row min-[551px]:w-[1100px]"> <!--box for หัวข้อใหญ่ เพื่อจัดให้เป็นแนวนอนแบบใหญ่ -->
+        
+        <div class="flex flex-col pl-8 pr-9 pb-7 pt-23 gap-5 min-[551px]:pl-0 "> <!--ตั้งแต่ Agencio ถึง logo เพื่อตั้งเป้นคอรัม -->
+          <div class="flex flex-row justify-start items-center gap-4">
+              <div class="relative inline-block"> <!--สำหรับร่วม logo เพื่อไม่โดดไปจุดอื่น-->
+                  <img src="images/img.Div.Q/Div.Q.logo.Agencio.blue.svg" alt="logo-main-blue" class="relative z-10"/>
+                  <img src="images/img.Div.Q/Div.Q.logo.Agencio.svg" alt="logo-main-white" class="absolute top-0 left-0 z-20 ml-2"/>
+              </div>
+                  <h1 class="text-2xl font-semibold text-[#0B0757] leading-tight">Agencio</h1>
+          </div>
+              <p class="text-[#8480AE] text-sm leading-loose tracking-wide pb-6 
+                      min-[551px]:w-[349px]   min-[551px]:flex-wrap min-[551px]:pb-0">
+                Winged moving moveth created for shall and a divide the their days male
+                 midst shall hath doesn't won't for. 
+                 Midst life.Over a great night.
+              </p>
 
         <div class="flex flex-wrap gap-2"> <!--All logo page-->
           <div class="relative inline-block"> <!--facebook page-->
@@ -651,81 +651,77 @@
 
       </div>
 
-      <div> <!--Mobile เท่านั้น พอขนาดเกินกำหนด ใช้อีกอัน อันนี้จะหายไป-->
-        <div> <!--Features For Mobile อยู่หัว และ ท้าย -->
-          <button>Features</button>
-          <button><img src="images/img.Div.Q/Div.Q.BT.down.forLG.svg" </button>
+        <div class="block min-[550px]:hidden"> <!--Mobile เท่านั้น พอขนาดเกินกำหนด ใช้อีกอัน อันนี้จะหายไป-->
+            <div class="flex flex-row justify-between flex-1 border-b border-b-gray-200 py-4 px-8"> <!--Features For Mobile อยู่หัว และ ท้าย -->
+              <button class="text-[#0B0757] font-semibold">Features</button>
+              <button><img src="images/img.Div.Q/Div.Q.BT.down.forLG.svg" alt="Dropdown arrow" /></button>
+            </div>
+
+            <div class="flex flex-row justify-between flex-1 border-b border-b-gray-200 py-4 px-8"> <!--About For Mobile อยู่หัว และ ท้าย -->
+              <button class="text-[#0B0757] font-semibold">About</button>
+              <button><img src="images/img.Div.Q/Div.Q.BT.down.forLG.svg" alt="Dropdown arrow" /></button>
+            </div>
+
+            <div class="flex flex-row justify-between flex-1 border-b border-b-gray-200 py-4 px-8"> <!--Resources For Mobile อยู่หัว และ ท้าย -->
+              <button class="text-[#0B0757] font-semibold">Resources</button>
+              <button><img src="images/img.Div.Q/Div.Q.BT.down.forLG.svg" alt="Dropdown arrow" /></button>
+            </div>
+
         </div>
 
-        <img src="images/img.Div.Q/Div.Q.Line.svg" alt="Line-button" />
+        <div class="hidden min-[550px]:flex min-[550px]:justify-center min-[550px]:pt-[92px] min-[550px]:gap-5"> <!--PC เท่านั้น พอขนาดเล็กเกินกำหนดใช้ Mobile อันนี้จะหายไป "hidden lg:flex"-->
 
-        <div> <!--About For Mobile อยู่หัว และ ท้าย -->
-          <button>About</button>
-          <button><img src="images/img.Div.Q/Div.Q.BT.down.forLG.svg" </button>
+            <div class="px-10"> <!--Features for PC ร่วม 4 หัวข้อย่อย -->
+              <div class="pb-4"> <!--only Features (ลบได้ถ้าไม่จำเป็น) เผื่อต้องจัดตำแหน่ง Features เท่านั้น-->
+                <button class="text-2xl font-semibold text-[#0B0757] leading-tight">Features</button>
+              </div>
+              <div class="flex flex-col justify-start items-start"> <!--หัวข้อย่อยของ Features (ลบได้ถ้าไม่จำเป็น) เผื่อจัดตำแหน่ง ให้เป็นคมรัม-->
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide py-1 hover:text-blue-600">Analytic</button>
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide hover:text-blue-600">Activity</button>
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide py-1 hover:text-blue-600">Influencer</button>
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide hover:text-blue-600">Publishing</button>
+              </div>
+            </div>
+
+            <div class="px-10"> <!--About for PC ร่วม 4 หัวข้อย่อย -->
+              <div class="pb-4"> <!--only About (ลบได้ถ้าไม่จำเป็น) เผื่อต้องจัดตำแหน่ง About เท่านั้น-->
+                <button class="text-2xl font-semibold text-[#0B0757] leading-tight">About</button>
+              </div>
+              <div class="flex flex-col justify-start items-start"> <!--หัวข้อย่อยของ About (ลบได้ถ้าไม่จำเป็น) เผื่อจัดตำแหน่ง ให้เป็นคมรัม-->
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide py-1 hover:text-blue-600">Blog</button>
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide hover:text-blue-600">Pricing</button>
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide py-1 hover:text-blue-600">Company</button>
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide hover:text-blue-600">Careers</button>
+              </div>
+            </div>
+
+            <div class="px-10"> <!--Resources for PC ร่วม 4 หัวข้อย่อย -->
+              <div class="pb-4"> <!--only Resources (ลบได้ถ้าไม่จำเป็น) เผื่อต้องจัดตำแหน่ง About เท่านั้น-->
+                <button class="text-2xl font-semibold text-[#0B0757] leading-tight">Resources</button>
+              </div>
+              <div class="flex flex-col justify-start items-start"> <!--หัวข้อย่อยของ Resources (ลบได้ถ้าไม่จำเป็น) เผื่อจัดตำแหน่ง ให้เป็นคมรัม-->
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide py-1 hover:text-blue-600">Application Security</button>
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide hover:text-blue-600">Software Policy</button>
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide py-1 hover:text-blue-600">Supply Chain</button>
+                <button class="text-[#8480AE] text-base leading-loose tracking-wide hover:text-blue-600">Manage Reputation</button>
+              </div>
+            </div>
+
         </div>
-
-        <img src="images/img.Div.Q/Div.Q.Line.svg" alt="Line-button" />
-
-        <div> <!--Resources For Mobile อยู่หัว และ ท้าย -->
-          <button>Resources</button>
-          <button><img src="images/img.Div.Q/Div.Q.BT.down.forLG.svg" </button>
-        </div>
-
-        <img src="images/img.Div.Q/Div.Q.Line.svg" alt="Line-button" />
-      </div>
-
-      <div> <!--PC เท่านั้น พอขนาดเล็กเกินกำหนดใช้ Mobile อันนี้จะหายไป "hidden lg:flex"-->
-
-        <div> <!--Features for PC ร่วม 4 หัวข้อย่อย -->
-          <div> <!--only Features (ลบได้ถ้าไม่จำเป็น) เผื่อต้องจัดตำแหน่ง Features เท่านั้น-->
-            <button>Features</button>
-          </div>
-          <div> <!--หัวข้อย่อยของ Features (ลบได้ถ้าไม่จำเป็น) เผื่อจัดตำแหน่ง ให้เป็นคมรัม-->
-            <button>Analytic</button>
-            <button>Activity</button>
-            <button>Influencer</button>
-            <button>Publishing</button>
-          </div>
-        </div>
-
-        <div> <!--About for PC ร่วม 4 หัวข้อย่อย -->
-          <div> <!--only About (ลบได้ถ้าไม่จำเป็น) เผื่อต้องจัดตำแหน่ง About เท่านั้น-->
-            <button>About</button>
-          </div>
-          <div> <!--หัวข้อย่อยของ About (ลบได้ถ้าไม่จำเป็น) เผื่อจัดตำแหน่ง ให้เป็นคมรัม-->
-            <button>Blog</button>
-            <button>Pricing</button>
-            <button>Company</button>
-            <button>Careers</button>
-          </div>
-        </div>
-
-        <div> <!--Resources for PC ร่วม 4 หัวข้อย่อย -->
-          <div> <!--only Resources (ลบได้ถ้าไม่จำเป็น) เผื่อต้องจัดตำแหน่ง About เท่านั้น-->
-            <button>Resources</button>
-          </div>
-          <div> <!--หัวข้อย่อยของ Resources (ลบได้ถ้าไม่จำเป็น) เผื่อจัดตำแหน่ง ให้เป็นคมรัม-->
-            <button>Application Security</button>
-            <button>Software Policy</button>
-            <button>Supply Chain</button>
-            <button>Manage Reputation</button>
-          </div>
-        </div>
-
-      </div>
 
     </div>
 
     <div> <!--box for img.Line - copy...-->
 
-      <div> <!--Mobile เท่านั้น-->
-        <p>Copyright ©2020 Agencio</p>
-      </div>
+          <div class="block min-[550px]:hidden"> <!--Mobile เท่านั้น-->
+            <p class="text-center p-7 text-[#8480AE]">Copyright ©2020 Agencio</p>
+          </div>
 
-      <div> <!--PC เท่านั้น-->
-        <img src="images/img.Div.Q/Div.Q.Line.svg">
-        <p>Copyright ©2020 Agencio. All Rights Reserved</p> <!--สี #0B075733 ความใส่ 20%-->
-      </div>
+          <div class="hidden min-[550px]:block"> <!--PC เท่านั้น-->
+            <div class="flex-1 border-t border-t-gray-200 p-10 "> 
+            <p class="text-center justify-center items-center text-[#0B075733]">Copyright ©2020 Agencio. All Rights Reserved</p> <!--สี #0B075733 ความใส่ 20%-->
+            </div>
+          </div>
 
     </div>
 

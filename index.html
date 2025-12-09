@@ -1,25 +1,735 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    <!--start coding here-->
-    <!-- dev1 (header, nav)-->
-    <header></header>
 
-    <!-- dev2 (services, take your hand)-->
-    <section></section>
-    <section></section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <title>Agencio</title>
+</head>
+
+<body class="font-[rubik] flex flex-col items-center justify-center p-[0] m-[0]">
+  <!--start coding here-->
+  <!-- dev1 (header, nav)-->
+  <header class="w-full min-h-screen flex flex-col bg-white relative z-[0] lg:h-[956px]">
+    <!-- background polygon -->
+    <div
+      class="bg-[#F4F7FC] absolute z-[1] top-[0px] left-[0] w-full h-[737px] [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_85%)] lg:h-[911px]">
+    </div>
+    <!-- nav -->
+    <nav
+      class="w-full h-[59px] flex justify-between items-center px-[20px] py-[13px] z-[2] lg:h-[69px] lg:px-0 lg:py-[60px] lg:max-w-[1122px] lg:mx-auto">
+      <!-- agencio logo -->
+      <img src="/images/dev1/agencio-logo.svg" alt="Agencio Logo" class="w-[125px] h-[33px] lg:w-[150px] lg:h-[40px]" />
+      <!-- hamberger logo -->
+      <img src="/images/dev1/hamberger-logo.svg" alt="Hamberger Logo" class="w-[18px] h-[16px] lg:hidden" />
+      <!-- links container -->
+      <div class="hidden lg:flex lg:justify-between lg:items-center lg:gap-[40px]">
+        <!-- home link -->
+        <a href="#"
+          class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-200">
+          Home
+        </a>
+        <!-- category link -->
+        <a href="#"
+          class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-200">
+          Category
+        </a>
+        <!-- service link -->
+        <a href="#"
+          class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-200">
+          Service
+        </a>
+        <!-- blog link -->
+        <a href="#"
+          class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-200">
+          Blog
+        </a>
+        <!-- contact link -->
+        <a href="#"
+          class="text-[16px] leading-[100%] text-[#1F1E61] font-normal hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-200">
+          Contact
+        </a>
+        <!-- create account button -->
+        <button
+          class="w-[160px] h-[60px] rounded-[5px] bg-[#FDD76E] text-[16px] leading-[100%] text-center text-[#0B0757] font-normal hover:bg-[#FBC84A] hover:scale-105 hover:shadow-lg transition-all duration-200">
+          Create Account
+        </button>
+      </div>
+    </nav>
+    <!-- section hero -->
+    <section
+      class="flex flex-col lg:flex-row lg:justify-between lg:items-center lg:max-w-[1200px] lg:mx-auto lg:w-full lg:px-[40px] lg:pt-[60px]">
+      <!-- hero section -->
+      <div
+        class="hero-container w-full flex flex-col px-[20px] pt-[47px] pb-[60px] gap-[20px] z-[2] lg:w-[565px] lg:px-0 lg:pt-0 lg:pb-0 lg:mb-[120px]">
+        <!-- tagline hero section-->
+        <div class="flex">
+          <div
+            class="text-[#1374F6] font-normal text-[16px] leading-[100%] uppercase tracking-wide inline-flex items-center gap-[8px] lg:text-[17px]">
+            CREATIVE AGENCY _
+          </div>
+        </div>
+        <!-- title hero section-->
+        <div class="font-medium text-[36px] leading-[120%] text-[#0B0757] lg:text-[48px] lg:leading-[120%]">
+          We are here to give the best service
+        </div>
+        <!-- description hero section-->
+        <div
+          class="font-normal text-[14px] leading-[24px] text-[#8480AE] lg:text-[18px] lg:leading-[30px] lg:max-w-[500px]">
+          It's crafted with the latest trend of design & coded with all modern
+          approaches. It's a robust & multi-dimensional usable template.
+        </div>
+        <div class="flex items-center gap-[7px] lg:gap-[12px]">
+          <!-- get started button -->
+          <button
+            class="w-[160px] h-[60px] rounded-[5px] bg-[#1374F6] font-medium text-[16px] leading-[100%] text-center text-white hover:bg-[#0E5FD4] hover:scale-105 hover:shadow-lg transition-all duration-200">
+            Get Started
+          </button>
+          <!-- watch video button -->
+          <button
+            class="flex items-center gap-[8px] h-[60px] px-[16px] hover:gap-[10px] transition-all duration-200 group">
+            <!-- play button -->
+            <img src="/images/dev1/play-button.svg" alt="Play Button"
+              class="w-[24px] h-[24px] group-hover:scale-110 transition-transform duration-200" />
+            <!-- watch video text -->
+            <span
+              class="text-[#0B0757] font-normal text-[16px] leading-[100%] group-hover:text-[#1374F6] group-hover:underline group-hover:decoration-2 group-hover:underline-offset-4 transition-all duration-200">
+              Watch Video
+            </span>
+          </button>
+        </div>
+      </div>
+      <!-- immage section -->
+      <div class="image-container w-full h-[372.56px] flex relative lg:w-[609px] lg:h-[632px] lg:ml-[100px]">
+        <!-- hero portrait -->
+        <img src="/images/dev1/hero-portrait.png" alt="Hero Portrait"
+          class="absolute z-[2] top-[0px] left-[60px] w-auto h-full object-contain lg:w-[445px] lg:h-[614px] lg:top-[13px] lg:left-[90px]" />
+        <!-- real time user -->
+        <img src="/images/dev1/real-time-user.png" alt="Real Time User"
+          class="z-[3] object-cover rounded-[10px] absolute top-[5px] right-[1px] w-auto h-auto max-w-[180px] lg:max-w-[149px] lg:h-[204.18px] lg:top-[40px] lg:right-[-40px]" />
+        <!-- user sample -->
+        <img src="/images/dev1/user-sample.png" alt="User Sample"
+          class="z-[3] object-cover rounded-[10px] absolute bottom-[0] left-[0] w-auto h-auto max-w-[160px] lg:max-w-[180px] lg:h-[280px] lg:bottom-[20px] lg:left-[20px]" />
+        <!-- message logo -->
+        <img src="/images/dev1/message-logo.svg" alt="Message Logo"
+          class="z-[4] object-cover absolute bottom-[135px] left-[90px] w-auto h-auto lg:w-[79.95px] lg:h-[79.95px] lg:bottom-[220px] lg:left-[125px]" />
+      </div>
+    </section>
+  </header>
+
+  <!-- dev2 (services, take your hand)-->
+  <!-- services section -->
+  <section class="flex flex-col justify-between items-start h-[1391px] w-full pl-[16px] py-[50px] lg:h-[626px] lg:max-w-[1440px] lg:mx-auto lg:flex-row lg:items-center lg:justify-start xl:relative">
+    <div class="flex flex-col justify-between items-start h-full w-full max-w-[285px] lg:h-[447px] lg:max-w-[1200px] lg:mx-auto lg:px-[40px]">
+      <h1 class="max-w-[264px] font-medium text-4xl text-[#0B0757] py-[29px] lg:text-5xl lg:max-w-[352px]">Lets Check Our<br>Services
+        <span class="inline-block align-center w-[36px] border-b-4 border-solid rounded-xs border-[#1374F6] lg:w-[68px] lg:border-b-6 lg:rounded-sm"></span>
+      </h1>
+      <!-- services items container -->
+      <div class="lg:flex lg:flex-row lg:items-center lg:justify-start">
+        <!-- Box 1 -->
+        <div class="w-[285px] h-[296px] rounded-[10px] px-[20px] py-[29px] flex flex-col justify-between items-start bg-[#F9FBFF] lg:bg-transparent lg:pl-[0]">
+          <img src="images/dev2-services-section/service1-icon.svg" alt="Increase conversion">
+          <h3 class="font-medium text-xl text-[#0B0757] pl-[10px]">Increase conversion</h3>
+          <p class="font-normal text-base text-[#8480AE] w-[243px] h-[94px] pl-[10px]">It's crafted with the latest of
+            design & coded with all trendy & modern approaches.</p>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="w-[285px] h-[296px] rounded-[10px] px-[20px] py-[29px] flex flex-col justify-between items-start">
+          <img src="images/dev2-services-section/service2-icon.svg" alt="Discussion for idea">
+          <h3 class="font-medium text-xl text-[#0B0757] pl-[10px]">Discussion for idea</h3>
+          <p class="font-normal text-base/[28px] text-[#8480AE] w-[243px] h-[94px] pl-[10px]">It's crafted with the
+            latest of
+            design & coded with all trendy & modern approaches.</p>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="w-[285px] h-[296px] rounded-[10px] px-[20px] py-[29px] flex flex-col justify-between items-start lg:bg-[#F9FBFF]">
+          <img src="images/dev2-services-section/service3-icon.svg" alt="Product analytics">
+          <h3 class="font-medium text-xl text-[#0B0757] pl-[10px]">Product analytics</h3>
+          <p class="font-normal text-base/[28px] text-[#8480AE] w-[243px] h-[94px] pl-[10px]">It's crafted with the
+            latest of
+            design & coded with all trendy & modern approaches.</p>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="w-[285px] h-[296px] rounded-[10px] px-[20px] py-[29px] flex flex-col justify-between items-start">
+          <img src="images/dev2-services-section/service4-icon.svg" alt="Perfect testing">
+          <h3 class="font-medium text-xl text-[#0B0757] pl-[10px]">Perfect testing</h3>
+          <p class="font-normal text-base/[28px] text-[#8480AE] w-[243px] h-[94px] pl-[10px]">It's crafted with the
+            latest of
+            design & coded with all trendy & modern approaches.</p>
+        </div>
+      </div>
+    </div>
+
+     <!-- decoration dots -->
+        <div class="hidden xl:flex xl:flex-col xl:absolute z-[1] xl:top-[50%] xl:right-[-80px]">
+        <img src="images/dev2-services-section/deco-dots.svg" alt="Decoration Dots" class="xl:w-[188px] xl:h-[52px]">
+        <img src="images/dev2-services-section/deco-dots.svg" alt="Decoration Dots" class="xl:w-[188px] xl:h-[52px] xl:absolute xl:top-[65px] xl:left-[40px]">
+      </div>
+    
+  </section>
+
+  <!-- take your hand section -->
+  <section class="flex flex-col justify-between items-start max-h-full w-full py-[50px] lg:h-[971px] lg:max-w-[1440px] lg:flex-row lg:items-center lg:justify-start">
+    <div class="relative z-[-1] w-full h-[931px] lg:h-full lg:max-w-[1200px] lg:mx-auto lg:px-[40px]">
+
+      <!--title and description container-->
+      <div class="flex flex-col justify-evenly items-start h-[480px] max-w-[379px] pl-[18px] absolute z-[1] top-[60px] lg:max-w-[1342px] lg:top-[120px] lg:left-[580px]">
+        <h1 class="max-w-[401px] font-medium text-4xl text-[#0B0757] lg:text-5xl">We Take The Work
+          <br>Of Your Hand
+          <span class="inline-block align-center w-[36px] border-b-4 border-solid rounded-xs border-[#1374F6] lg:w-[68px] lg:border-b-6 lg:rounded-sm"></span>
+        </h1>
+
+        <p class="font-normal text-sm/[24px] text-[#8480AE] w-full pr-[15px] lg:text-lg/[30px] lg:max-w-[570px]">It's crafted with the latest trend of
+          design & coded with all modern approaches. It's a robust & multi-dimensional usable.
+          Nostrum placeat hic, praesent atque ornare minim.<br>
+          <br>nihil suscipit aliquet excepteur bibendum cumque facilis senectus habitant aliquid cupidatat! Fugit? Nisl
+          dignissimos ratione
+        </p>
+
+        <button class="w-[160px] h-[60px] rounded-[5px] bg-[#1374F6]">
+          <span class="font-medium text-base text-[#FFFFFF]">Discover More</span>
+        </button>
+      </div>
+
+      <!-- skewed background -->
+      <div class="skew-y-15 max-w-[1273px] w-full h-[793.5px] bg-[#F4F7FC] absolute top-0 left-0 z-[0] lg:skew-y-7 lg:h-[680px] lg:top-[40px] lg:left-[60px] lg:w-[1273px]"></div>
+
+      <!-- image container -->
+      <div class="relative z-[1] top-[555px] left-[10px] lg:top-[-30px] lg:left-[-40px]">
+        <img src="images/dev2-take-your-hand-section/team-meeting.png" alt="Team Meeting"
+          class="w-[250.62px] h-[313px] absolute z-[2] top-[0] left-[60px] lg:w-[444px] lg:h-[569px]">
+        <img src="images/dev2-take-your-hand-section/daily-order-monitor-sample.svg" alt="daily-order-monitor-sample"
+          class="w-auto h-[130px] absolute z-[2] top-[170px] left-[0px] lg:h-[205.65px] lg:top-[340px] lg:left-[-30px]">
+      </div>
+
+    </div>
+  </section>
 
     <!-- dev3 (pricing plan, testimonial)-->
-    <section></section>
-    <section></section>
+    <!-- Pricing Plan Section -->
+    <section
+      class="w-full min-h-[700px] pt-[3216px] px-[-2px] flex flex-col lg:min-h-[1032px] lg:flex lg:flex-col lg:items-center"
+    >
+      <div class="w-[432px] min-h-[554px] my-[50px] lg:flex lg:flex-col lg:items-center">
+        <!-- Section Title -->
+        <div class="text-center lg:flex lg:flex-col lg:items-center">
+          <p class="w-[93px] h-[24px] text-[#8480AE] text-xl/[100%] font-normal whitespace-nowrap mx-[142px] lg:text-2xl/[100%] lg:tracking-[0] lg:mx-[0]">
+            Price Plan
+          </p>
+          <h2 class="w-[348px] h-[129px] text-[#0B0757] text-4xl/[100%] font-medium tracking-[0] ml-[15px] pt-[15px] lg:w-[589px] lg:h-[114px] lg:text-5xl/[100%] lg:tracking-[0] lg:ml-[0]">
+            No Extra<br class="lg:hidden"/>
+            Charges!Choose<br class="hidden lg:block"/>
+            <span>Your Plan.</span>
+          </h2>
+        </div>
 
-    <!-- dev4 (newsletter, footer)-->
-    <section></section>
-    <footer></footer>
-  </body>
+        <!-- Pricing Table -->
+        <div
+          class="w-[432px] h-[px] ml-[18px] mt-15 border-t border-b border-r border-[#0B075714] lg:w-[1110px] lg:h-[584px] lg:ml-[0] lg:mt-[50px] lg:border-b-0 "
+        >
+          <div
+            class="grid gap-0 border-b border-[#0B075714] [grid-template-columns:121px_103px_103px_103px] lg:[grid-template-columns:277px_277px_277px_277px]"
+          >
+            <!-- Header Row -->
+            <div class="p-6 border-l border-r border-[#0B075714] lg:p-[24px]"></div>
+            <div
+              class="p-6 border-r border-[#0B075714] flex flex-col items-center justify-center lg:p-[24px]"
+            >
+              <div class="text-2xl font-medium text-[#FDC46E] mb-1 lg:text-[32px]">$2000</div>
+              <div
+                class="text-[#8480AE] text-base font-normal leading-[100%] tracking-[0] lg:text-lg"
+              >
+                Regular
+              </div>
+            </div>
+            <div
+              class="p-6 border-r border-[#0B075714] flex flex-col items-center justify-center lg:p-[24px]"
+            >
+              <div class="text-2xl font-medium text-[#00B894] mb-1 lg:text-[32px]">$3000</div>
+              <div
+                class="text-[#8480AE] text-base font-normal leading-[100%] tracking-[0] lg:text-lg"
+              >
+                Premium
+              </div>
+            </div>
+            <div
+              class="p-6 border-[#0B075714] flex flex-col items-center justify-center lg:p-[24px]"
+            >
+              <div class="text-2xl font-medium text-[#1374F6] mb-1 lg:text-[32px]">$5000</div>
+              <div
+                class="text-[#8480AE] text-base font-normal leading-[100%] tracking-[0] lg:text-lg"
+              >
+                Corporate
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Rows -->
+          <div
+            class="grid gap-0 border-b border-[#0B075714] [grid-template-columns:121px_103px_103px_103px] [grid-template-rows:44px] lg:[grid-template-columns:277px_277px_277px_277px] lg:[grid-template-rows:80px]"
+          >
+            <div
+              class="border-l border-r border-[#0B075714] h-full text-[#8480AE] text-base font-normal leading-[100%] tracking-[0] flex items-center pl-[13px] lg:text-lg lg:pl-[24px]"
+            >
+              Full Access
+            </div>
+            <div
+              class="h-full border-r border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/cross.svg"
+                  alt="cross"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+            <div
+              class="h-full border-r border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/cross.svg"
+                  alt="cross"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+            <div
+              class="h-full border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/checkMark.svg"
+                  alt="checkMark"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+          </div>
+
+          <div
+            class="grid gap-0 border-b border-[#0B075714] [grid-template-columns:121px_103px_103px_103px] [grid-template-rows:44px] lg:[grid-template-columns:277px_277px_277px_277px] lg:[grid-template-rows:80px]"
+          >
+            <div
+              class="border-l border-r border-[#0B075714] h-full text-[#8480AE] text-base font-normal leading-[100%] tracking-[0] flex items-center pl-[13px] lg:text-lg lg:pl-[24px]"
+            >
+              Multiple User
+            </div>
+            <div
+              class="h-full border-r border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/cross.svg"
+                  alt="cross"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+            <div
+              class="h-full border-r border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/cross.svg"
+                  alt="cross"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+            <div
+              class="h-full border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/checkMark.svg"
+                  alt="checkMark"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+          </div>
+
+          <div
+            class="grid gap-0 border-b border-[#0B075714] [grid-template-columns:121px_103px_103px_103px] [grid-template-rows:44px] lg:[grid-template-columns:277px_277px_277px_277px] lg:[grid-template-rows:80px]"
+          >
+            <div
+              class="border-l border-r border-[#0B075714] h-full text-[#8480AE] text-base font-normal leading-[100%] tracking-[0] flex items-center pl-[13px] lg:text-lg lg:pl-[24px]"
+            >
+              Refund
+            </div>
+            <div
+              class="h-full border-r border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/cross.svg"
+                  alt="cross"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+            <div
+              class="h-full border-r border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/checkMark.svg"
+                  alt="checkMark"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+            <div
+              class="h-full border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/checkMark.svg"
+                  alt="checkMark"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+          </div>
+
+          <div
+            class="grid gap-0 [grid-template-columns:121px_103px_103px_103px] [grid-template-rows:44px] lg:[grid-template-columns:277px_277px_277px_277px] lg:[grid-template-rows:80px] lg:border-b lg:border-[#0B075714]"
+          >
+            <div
+              class="border-l border-r border-[#0B075714] h-full text-[#8480AE] text-base font-normal leading-[100%] tracking-[0] flex items-center pl-[13px] lg:text-lg lg:pl-[24px]"
+            >
+              24/7 Support
+            </div>
+            <div
+              class="h-full border-r border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/checkMark.svg"
+                  alt="checkMark"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+            <div
+              class="h-full border-r border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/checkMark.svg"
+                  alt="checkMark"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+            <div
+              class="h-full border-[#0B075714] flex items-center justify-center"
+            >
+              <span
+                ><img
+                  src="./images/dev3/pricePlan/checkMark.svg"
+                  alt="checkMark"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+              /></span>
+            </div>
+          </div>
+
+          <!-- Action Buttons for PC -->
+          <div class="hidden lg:grid lg:[grid-template-columns:277px_277px_277px_277px] lg:[grid-template-rows:145px]">
+            <div
+              class="border-r border-[#0B075714] h-full flex items-center"
+            >
+            </div>
+            <div
+              class="border-r border-b border-[#0B075714] text-center h-full flex flex-col justify-center items-center pt-[20px] gap-[8px]"
+            >
+              <button
+                type="button"
+                class="w-[120px] h-[50px] bg-[#FDC46E] text-white px-8 py-3 rounded text-sm font-medium leading-[100%] tracking-[0] flex items-center justify-center whitespace-nowrap cursor-pointer"
+              >
+                Choose Plan
+              </button>
+              <p class="block text-[#8480AE] text-xs font-normal">Get your 30 days free trial</p>
+            </div>
+            <div
+              class="border-r border-b border-[#0B075714] text-center h-full flex flex-col justify-center items-center pt-[20px] gap-[8px]"
+            >
+              <button
+                type="button"
+                class="w-[120px] h-[50px] bg-[#00B894] text-white px-8 py-3 rounded text-sm font-medium leading-[100%] tracking-[0] flex items-center justify-center whitespace-nowrap cursor-pointer"
+              >
+                Choose Plan
+              </button>
+              <p class="block text-[#8480AE] text-xs font-normal">Get your 30 days free trial</p>
+            </div>
+            <div
+              class="border-b border-[#0B075714] text-center h-full flex flex-col justify-center items-center pt-[20px] gap-[8px]"
+            >
+              <button
+                type="button"
+                class="w-[120px] h-[50px] bg-[#1374F6] text-white px-8 py-3 rounded text-sm font-medium leading-[100%] tracking-[0] flex items-center justify-center whitespace-nowrap cursor-pointer"
+              >
+                Choose Plan
+              </button>
+              <p class="block text-[#8480AE] text-xs font-normal">Get your 30 days free trial</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons for Mobile -->
+        <div class="w-[432px] ml-[18px] lg:hidden">
+          <div
+            class="grid gap-0 [grid-template-columns:121px_103px_103px_103px] [grid-template-rows:100px]"
+          >
+            <div></div>
+            <div
+              class="text-center h-full flex flex-col items-center pt-[15px]"
+            >
+              <button
+                type="button"
+                class="w-[85px] h-[40px] bg-[#FDC46E] text-white px-8 py-3 rounded text-xs font-medium leading-[100%] tracking-[0] flex items-center justify-center whitespace-nowrap hover:bg-[#FBC84A] hover:scale-105 transition-all duration-200 cursor-pointer"
+              >
+                Choose Plan
+              </button>
+              <p class="hidden text-[#8480AE] text-xs font-normal">Get your 30 days free trial</p>
+            </div>
+            <div
+              class="text-center h-full flex flex-col items-center pt-[15px]"
+            >
+              <button
+                type="button"
+                class="w-[85px] h-[40px] bg-[#00B894] text-white px-8 py-3 rounded text-xs font-medium leading-[100%] tracking-[0] flex items-center justify-center whitespace-nowrap hover:bg-[#00A085] hover:scale-105 transition-all duration-200 cursor-pointer"
+              >
+                Choose Plan
+              </button>
+              <p class="hidden text-[#8480AE] text-xs font-normal">Get your 30 days free trial</p>
+            </div>
+            <div
+              class="text-center h-full flex flex-col items-center pt-[15px]"
+            >
+              <button
+                type="button"
+                class="w-[85px] h-[40px] bg-[#1374F6] text-white px-8 py-3 rounded text-xs font-medium leading-[100%] tracking-[0] flex items-center justify-center whitespace-nowrap hover:bg-[#0E5FD4] hover:scale-105 transition-all duration-200 cursor-pointer"
+              >
+                Choose Plan
+              </button>
+              <p class="hidden text-[#8480AE] text-xs font-normal">Get your 30 days free trial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="w-[375px] h-[847px] lg:flex lg:w-full lg:min-h-[827px] lg:flex-row lg:items-center lg:justify-center lg:px-[165px] lg:py-[100px]">
+      <div class="flex flex-col gap-[20px] lg:flex-row lg:items-center lg:gap-[126px] lg:w-[1112px] lg:h-[482px]">
+        <!-- Customer Image -->
+        <div class="pt-[74px] pl-[25px] relative lg:pt-0 lg:pl-0">
+          <div
+            class="w-[308px] h-[424px] rounded-lg relative overflow-hidden lg:w-[349px] lg:h-[482px]"
+          >
+            <img
+              src="./images/dev3/testimonial/women.png"
+              alt="Customer testimonial - Jack Smith"
+              class="z-0 w-full h-full object-cover"
+            />
+            </div>
+
+            <!-- Thumbs Up Icon -->
+            <div
+              class="absolute top-[308px] left-[3px] bg-[#64D5FD] w-[76px] h-[76px] rounded-[10px] flex items-center justify-center z-[1000] lg:top-[290px] lg:left-[-40px] lg:w-[76px] lg:h-[76px]"
+            >
+              <img
+                src="./images/dev3/testimonial/thumbLike.svg"
+                alt="thumbUp"
+                class="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]"
+              />
+          </div>
+        </div>
+
+        <!-- Testimonial Content -->
+        <div class="w-[343px] h-[244px] flex flex-col justify-center pl-[16px] lg:w-[500px] lg:h-auto lg:pl-0 lg:justify-start lg:gap-[30px]">
+          <!-- Quote Icon -->
+          <div class="mb-4 lg:mb-0">
+            <img src="./images/dev3/testimonial/quote.svg" alt="quote" class="w-[44px] h-[44px] lg:w-[60px] lg:h-[60px]" />
+          </div>
+
+          <!-- Testimonial Text -->
+           <div class="w-[343px] h-[244px] flex flex-col justify-between items-center lg:w-full lg:h-auto lg:gap-[30px] lg:items-start">
+          <p class="text-[#8480AE] text-base font-normal leading-[24px] italic lg:text-2xl lg:leading-[40px] lg:w-[602px] lg:h-[153px] lg:italic">
+            It's awesome service. Land from day very fill that midst stars one
+            dominion. Itself was let that divided itself god don't subdue
+            wherein let behold over he whose of sea moved called.
+          </p>
+
+          <!-- Author Info -->
+          <div class="lg:flex lg:flex-col lg:justify-start lg:items-start">
+            <p class="w-[120px] h-[36px] text-[#FDC46E] font-bold text-xl leading-[28px] tracking-[0] lg:text-2xl lg:w-[153px] lg:h-[56px] lg:leading-[40px]">Jack Smith</p>
+            <p class="text-[#8480AE] text-sm font-normal leading-[28px] tracking-[0] lg:text-base lg:w-[121px] lg:h-[27px] lg:leading-[28px] lg:-mt-[15px]">CEO of DIANO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- dev4 newsletter-->
+  <section>
+    <div class="flex flex-col items-center bg-[#F4F7FC] p-8 gap-5
+                lg:bg-[#F4F7FC] lg:w-[1110px] lg:rounded-lg lg:mx-auto lg:px-18 lg:py-0 lg:gap-6">
+      <!--BOX lg:justify-center  items-stretch -->
+      <div class="text-center text-wrap 
+                    lg:mt-10">
+        <h1 class="text-4xl font-bold text-[#0B0757] leading-tight">Sign up to our newsletter</h1>
+      </div>
+      <div class="text-center text-wrap">
+        <p class="text-lg text-[#8480AE]">Recive latest news, updates and many <br> other news every week.</p>
+      </div>
+      <div class="flex flex-row justify-center items-center rounded-full bg-white w-[319px] h-[67px] gap-15
+                    lg:w-[480px] lg:justify-between lg:px-3 lg:mb-10">
+        <input placeholder="Enter your email address" class="text-[#0B075733]">
+        </input> <!--Enter your email address-->
+        <button class=""><img src="images/img.Div.Q/Div.Q.BT.svg" alt="Button icon newsletter"></button>
+        <!--img Div.Q.BT-->
+      </div>
+    </div>
+  </section>
+
+  <!--dev4 footer-->
+  <footer>
+    <div> <!--box for หัวข้อใหญ่ เพื่อจัดให้เป็นแนวนอนแบบใหญ่ -->
+
+      <div> <!--ตั้งแต่ Agencio ถึง logo เพื่อตั้งเป้นคอรัม-->
+
+        <div class="relative inline-block"> <!--สำหรับร่วม logo เพื่อไม่โดดไปจุดอื่น-->
+          <img src="images/img.Div.Q/Div.Q.logo.Agencio.blue.svg" alt="logo-main-blue" class="relative z-10" />
+          <img src="images/img.Div.Q/Div.Q.logo.Agencio.svg" alt="logo-main-white"
+            class="absolute top-0 left-0 z-20 ml-2" />
+        </div>
+        <h1>Agencio</h1>
+        <p>
+          Winged moving moveth created for shall and a divide the their days male
+          midst shall hath doesn't won't for.
+          Midst life.Over a great night.
+        </p>
+
+        <div class="flex flex-wrap gap-2"> <!--All logo page-->
+          <div class="relative inline-block"> <!--facebook page-->
+            <button class="relative">
+              <img src="images/img.Div.Q/Div.Q.BG.svg" alt="background-facebook" class="relative z-10" />
+            </button>
+            <button class="absolute bottom-0.5 left-0 w-full h-full flex items-center justify-center">
+              <img src="images/img.Div.Q/Div.Q.facebook.logo.svg" alt="logo-facebook" class=" z-20" />
+            </button>
+          </div>
+
+          <div class="relative inline-block"> <!--Twitter page-->
+            <button class="relative">
+              <img src="images/img.Div.Q/Div.Q.BG.svg" alt="background-facebook" class="relative z-10" />
+            </button>
+            <button class="absolute bottom-0.5 left-0 w-full h-full flex items-center justify-center">
+              <img src="images/img.Div.Q/Div.Q.twt.logo.svg" alt="logo-facebook" class=" z-20" />
+            </button>
+          </div>
+
+          <div class="relative inline-block"> <!--in page-->
+            <button class="relative">
+              <img src="images/img.Div.Q/Div.Q.BG.svg" alt="background-facebook" class="relative z-10" />
+            </button>
+            <button class="absolute bottom-1 left-0 w-full h-full flex items-center justify-center">
+              <img src="images/img.Div.Q/Div.Q.in.logo.svg" alt="logo-facebook" class=" z-20" />
+            </button>
+          </div>
+
+          <div class="relative inline-block"> <!--youtube page-->
+            <button class="relative">
+              <img src="images/img.Div.Q/Div.Q.BG.svg" alt="background-facebook" class="relative z-10" />
+            </button>
+            <button class="absolute bottom-0.5 left-0 w-full h-full flex items-center justify-center">
+              <img src="images/img.Div.Q/Div.Q.youtube.logo.svg" alt="logo-facebook" class=" z-20" />
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div> <!--Mobile เท่านั้น พอขนาดเกินกำหนด ใช้อีกอัน อันนี้จะหายไป-->
+        <div> <!--Features For Mobile อยู่หัว และ ท้าย -->
+          <button>Features</button>
+          <button><img src="images/img.Div.Q/Div.Q.BT.down.forLG.svg" </button>
+        </div>
+
+        <img src="images/img.Div.Q/Div.Q.Line.svg" alt="Line-button" />
+
+        <div> <!--About For Mobile อยู่หัว และ ท้าย -->
+          <button>About</button>
+          <button><img src="images/img.Div.Q/Div.Q.BT.down.forLG.svg" </button>
+        </div>
+
+        <img src="images/img.Div.Q/Div.Q.Line.svg" alt="Line-button" />
+
+        <div> <!--Resources For Mobile อยู่หัว และ ท้าย -->
+          <button>Resources</button>
+          <button><img src="images/img.Div.Q/Div.Q.BT.down.forLG.svg" </button>
+        </div>
+
+        <img src="images/img.Div.Q/Div.Q.Line.svg" alt="Line-button" />
+      </div>
+
+      <div> <!--PC เท่านั้น พอขนาดเล็กเกินกำหนดใช้ Mobile อันนี้จะหายไป "hidden lg:flex"-->
+
+        <div> <!--Features for PC ร่วม 4 หัวข้อย่อย -->
+          <div> <!--only Features (ลบได้ถ้าไม่จำเป็น) เผื่อต้องจัดตำแหน่ง Features เท่านั้น-->
+            <button>Features</button>
+          </div>
+          <div> <!--หัวข้อย่อยของ Features (ลบได้ถ้าไม่จำเป็น) เผื่อจัดตำแหน่ง ให้เป็นคมรัม-->
+            <button>Analytic</button>
+            <button>Activity</button>
+            <button>Influencer</button>
+            <button>Publishing</button>
+          </div>
+        </div>
+
+        <div> <!--About for PC ร่วม 4 หัวข้อย่อย -->
+          <div> <!--only About (ลบได้ถ้าไม่จำเป็น) เผื่อต้องจัดตำแหน่ง About เท่านั้น-->
+            <button>About</button>
+          </div>
+          <div> <!--หัวข้อย่อยของ About (ลบได้ถ้าไม่จำเป็น) เผื่อจัดตำแหน่ง ให้เป็นคมรัม-->
+            <button>Blog</button>
+            <button>Pricing</button>
+            <button>Company</button>
+            <button>Careers</button>
+          </div>
+        </div>
+
+        <div> <!--Resources for PC ร่วม 4 หัวข้อย่อย -->
+          <div> <!--only Resources (ลบได้ถ้าไม่จำเป็น) เผื่อต้องจัดตำแหน่ง About เท่านั้น-->
+            <button>Resources</button>
+          </div>
+          <div> <!--หัวข้อย่อยของ Resources (ลบได้ถ้าไม่จำเป็น) เผื่อจัดตำแหน่ง ให้เป็นคมรัม-->
+            <button>Application Security</button>
+            <button>Software Policy</button>
+            <button>Supply Chain</button>
+            <button>Manage Reputation</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div> <!--box for img.Line - copy...-->
+
+      <div> <!--Mobile เท่านั้น-->
+        <p>Copyright ©2020 Agencio</p>
+      </div>
+
+      <div> <!--PC เท่านั้น-->
+        <img src="images/img.Div.Q/Div.Q.Line.svg">
+        <p>Copyright ©2020 Agencio. All Rights Reserved</p> <!--สี #0B075733 ความใส่ 20%-->
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+
 </html>
